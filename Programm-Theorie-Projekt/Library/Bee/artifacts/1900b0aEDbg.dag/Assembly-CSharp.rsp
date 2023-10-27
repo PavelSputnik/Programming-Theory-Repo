@@ -405,6 +405,7 @@
 "Assets/Scripts/RotatorHor.cs"
 "Assets/Scripts/RotatorMuenze.cs"
 "Assets/Scripts/Schweber.cs"
+"Assets/Scripts/SpielerController.cs"
 "Assets/Scripts/SpielerController1.cs"
 -langversion:9.0
 

@@ -24534,8 +24534,8 @@ GameObject:
   - component: {fileID: 23959366014806436}
   - component: {fileID: 54163043900355174}
   - component: {fileID: 135994560549237756}
-  - component: {fileID: 114819516551903854}
   - component: {fileID: 95882441885059766}
+  - component: {fileID: -32070834618127824}
   m_Layer: 0
   m_Name: Spielerball
   m_TagString: Player
@@ -24657,22 +24657,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.009922535
   m_Center: {x: -0.0000000018626451, y: -0.0000000051222755, z: -4.656614e-10}
---- !u!114 &114819516551903854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564306331112052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a4866eb0de917548b430d14cff87033, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  countText: {fileID: 0}
-  constraints: 0
-  playDir: {fileID: 0}
 --- !u!95 &95882441885059766
 Animator:
   serializedVersion: 5
@@ -24694,3 +24678,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-32070834618127824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564306331112052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e129214fb934654baf07ccf06188227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  constraints: 0
