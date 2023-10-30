@@ -407,6 +407,7 @@
 "Assets/Scripts/Schweber.cs"
 "Assets/Scripts/SpielerController.cs"
 "Assets/Scripts/SpielerController1.cs"
+"Assets/Scripts/UIController.cs"
 -langversion:9.0
 
 /deterministic
