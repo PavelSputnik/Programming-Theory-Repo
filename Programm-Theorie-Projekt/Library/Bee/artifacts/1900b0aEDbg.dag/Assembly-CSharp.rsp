@@ -399,15 +399,12 @@
 "Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs"
 "Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleWheelController.cs"
 "Assets/Scripts/CameraController.cs"
-"Assets/Scripts/LevelLoader.cs"
-"Assets/Scripts/Menus.cs"
-"Assets/Scripts/Rotator.cs"
-"Assets/Scripts/RotatorHor.cs"
-"Assets/Scripts/RotatorMuenze.cs"
-"Assets/Scripts/Schweber.cs"
+"Assets/Scripts/Pyramid.cs"
 "Assets/Scripts/SpielerController.cs"
-"Assets/Scripts/SpielerController1.cs"
+"Assets/Scripts/Stachel.cs"
+"Assets/Scripts/Target.cs"
 "Assets/Scripts/UIController.cs"
+"Assets/Scripts/Würfel.cs"
 -langversion:9.0
 
 /deterministic

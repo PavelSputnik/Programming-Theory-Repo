@@ -1,38 +1,26 @@
-﻿// Script für Ballsteuerung und Kollision mit PickUp-Objekten 
+﻿// Script für Ballsteuerung 
 // 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using UnityEngine.Playables;
+
 
 public class SpielerController: MonoBehaviour {
 
     public float speed;
-    //public Text countText;
     
-    //public static int count;
     public RigidbodyConstraints constraints;
-    // public PlayableDirector playDir;
-
-    private Rigidbody rb;
-    private Transform playerTransform;
     
-    private float zeit;
-    private float bestzeit;
-    private float min;
-    private float sec;
-    private float gesamtzeit;
-        
+    private Rigidbody rb;
+    
+    
+            
         
     void Start ()
     {
-        rb = GetComponent<Rigidbody>();
-        //speed = Menus.ballSpeed;
-        //count = 0;
-        //SetCountText();
-        playerTransform = GameObject.Find("Spielerball").transform;
-        
+        rb = GetComponent<Rigidbody>();       
+               
         rb.constraints = RigidbodyConstraints.None;                
     }
 
@@ -47,67 +35,5 @@ public class SpielerController: MonoBehaviour {
     }
 
 
-    // Kollision mit Objekt, das Tag "* Pick Up" hat
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Würfel Pick Up"))
-        {
-            //playDir = other.gameObject.GetComponentInParent<PlayableDirector>();
-            //playDir.Play();            
-            //count = count + 1;
-            SetCountText();
-            other.gameObject.tag = "Untagged";
-        }
-
-        if (other.gameObject.CompareTag("Pyramiden Pick Up"))
-        {
-            //playDir = other.gameObject.GetComponentInParent<PlayableDirector>();
-            //playDir.Play();
-            //count = count + 1;
-            SetCountText();
-            other.gameObject.tag = "Untagged";
-        }
-
-        if (other.gameObject.CompareTag("Münzen Pick Up"))
-        {
-            Animator anim = other.gameObject.GetComponent<Animator>();
-            anim.enabled = true;
-            //playDir = other.gameObject.GetComponentInParent<PlayableDirector>();
-            //playDir.Play();
-            //count = count + 1;
-            SetCountText();
-            other.gameObject.tag = "Untagged";
-        }
-
-        if (other.gameObject.CompareTag("Stachelkugel Pick Up"))
-        {
-            //playDir = other.gameObject.GetComponentInParent<PlayableDirector>();
-            //playDir.Play();
-            //count = count + 1;
-            SetCountText();
-            other.gameObject.tag = "Untagged";
-        }
-
-        if (other.gameObject.CompareTag("Kugel"))
-        {
-            //playDir = other.gameObject.GetComponentInParent<PlayableDirector>();
-            //playDir.Play();
-            Rigidbody constr = other.gameObject.GetComponent<Rigidbody>();
-            constr.constraints = RigidbodyConstraints.None;
-            //count = count + 1;
-            //SetCountText();            
-        }
-
-
-    }
-
-    
-    // Punktezähler 
-
-    void SetCountText()
-     {
-         //countText.text = "Punkte: " + count.ToString();                 
-     }
-        
+   
 }
